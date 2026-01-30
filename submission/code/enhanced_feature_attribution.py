@@ -290,9 +290,9 @@ def main():
     
     # 加载并合并数据
     df = analyzer.load_and_merge_data(
-        'Processed_DWTS_Long_Format.csv',
-        'Q1_Estimated_Fan_Votes.csv',
-        '2026 MCM Problem C Data.csv'
+        'results/Processed_DWTS_Long_Format.csv',
+        'results/Q1_Estimated_Fan_Votes.csv',
+        'data/2026 MCM Problem C Data.csv'
     )
     
     # 准备增强特征

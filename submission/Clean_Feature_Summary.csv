@@ -1,0 +1,6 @@
+Category,Count,Examples
+External (Week/Age/Season),11,"Week_Squared, Week_Cubed, Log_Week"
+Historical (Lag),14,"score_lag_1, fan_lag_1, score_lag_2"
+Trend,3,"score_trend, score_acceleration, improvement_from_first"
+Competition Context,5,"n_competitors, competitors_remaining_pct, week_in_season"
+Interaction,4,"hist_mean_times_week, hist_std_times_week, hist_mean_times_age"

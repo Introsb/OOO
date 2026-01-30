@@ -1,0 +1,6 @@
+method,causal_effect,stage1_r2,stage2_r2,did_effect,early_young,early_old,late_young,late_old,discontinuity,cutoff,below_mean,above_mean,raw_difference,att,treated_mean,control_mean,n_treated,r2_restricted,r2_unrestricted,f_statistic,improvement
+Instrumental Variable,1.4605111636025347,0.3400303809089049,0.4384064737277459,,,,,,,,,,,,,,,,,,
+Difference-in-Differences,,,,0.0965474995759867,7.493303969392634,6.772112776412776,9.108798076923076,8.484154383519208,,,,,,,,,,,,,
+Regression Discontinuity,,,,,,,,,0.0819821668918906,5.0,7.104786675490845,8.843349177198526,1.7385625017076807,,,,,,,,
+Propensity Score Matching,,,,,,,,,,,,,,1.9235899091627182,8.843349177198526,6.919759268035808,1266.0,,,,
+Granger Causality,,,,,,,,,,,,,,,,,,0.5404656444229154,0.5703392831409776,163.60041573608467,0.029873638718062145

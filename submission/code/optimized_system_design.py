@@ -19,10 +19,19 @@ class OptimizedSystemDesigner:
         self.best_score = -np.inf
         self.all_results = []
         
-    def load_data(self, simulation_path):
-        """加载仿真数据"""
-        print("Loading simulation data...")
-        df = pd.read_csv(simulation_path)
+    def load_data(self, processed_path, fan_votes_path):
+        """加载数据"""
+        print("Loading data...")
+        df_processed = pd.read_csv(processed_path)
+        df_fan = pd.read_csv(fan_votes_path)
+        
+        # 合并数据
+        df = df_processed.merge(
+            df_fan[['Season', 'Week', 'Name', 'Estimated_Fan_Vote']], 
+            on=['Season', 'Week', 'Name'],
+            how='inner'
+        )
+        
         print(f"Data shape: {df.shape}")
         return df
     
@@ -274,7 +283,10 @@ def main():
     designer = OptimizedSystemDesigner()
     
     # 加载数据
-    df = designer.load_data('Simulation_Results_Q3_Q4.csv')
+    df = designer.load_data(
+        'results/Processed_DWTS_Long_Format.csv',
+        'results/Q1_Estimated_Fan_Votes.csv'
+    )
     
     # 定义参数搜索空间
     judge_weights = np.arange(0.5, 0.91, 0.05)  # 50%-90%，步长5%

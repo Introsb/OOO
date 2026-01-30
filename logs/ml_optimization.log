@@ -1,0 +1,1066 @@
+2026-01-30 19:38:41,220 - ml_optimization.config_loader - INFO - Logging configured: level=INFO, file=logs/ml_optimization.log
+2026-01-30 19:38:41,220 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:38:41,220 - ml_optimization.ml_optimizer - INFO - ML OPTIMIZER INITIALIZED
+2026-01-30 19:38:41,220 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:38:41,220 - ml_optimization.time_series_cv - INFO - TimeSeriesCV initialized: n_splits=5, strategy=expanding
+2026-01-30 19:38:41,220 - ml_optimization.validation_framework - INFO - ValidationFramework initialized: threshold=0.85, min_lag=1
+2026-01-30 19:38:41,220 - ml_optimization.feature_engineer - INFO - AdvancedFeatureEngineer initialized: degree=2, depth=2, threshold=0.85
+2026-01-30 19:38:41,220 - ml_optimization.hyperparameter_optimizer - INFO - HyperparameterOptimizer initialized: n_iter=30
+2026-01-30 19:38:41,220 - ml_optimization.ensemble_builder - INFO - EnsembleBuilder initialized
+2026-01-30 19:38:41,220 - ml_optimization.model_interpreter - INFO - ModelInterpreter initialized
+2026-01-30 19:38:41,220 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:38:41,220 - ml_optimization.ml_optimizer - INFO - STARTING FULL ML OPTIMIZATION PIPELINE
+2026-01-30 19:38:41,220 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:38:41,220 - ml_optimization.ml_optimizer - INFO - Loading data from submission/results/Clean_Enhanced_Dataset.csv...
+2026-01-30 19:38:41,237 - ml_optimization.ml_optimizer - INFO -   Loaded 2777 records, 37 features
+2026-01-30 19:38:41,237 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:38:41,237 - ml_optimization.ml_optimizer - INFO - OPTIMIZING FOR JUDGE
+2026-01-30 19:38:41,237 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:38:41,239 - ml_optimization.ml_optimizer - INFO - Train: 2594 records, Test: 183 records
+2026-01-30 19:38:41,239 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:38:41,239 - ml_optimization.feature_engineer - INFO - ADVANCED FEATURE ENGINEERING
+2026-01-30 19:38:41,239 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:38:41,239 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 19:38:41,248 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 19:38:41,248 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 19:38:41,352 - ml_optimization.feature_engineer - INFO -   Created 561 interaction features
+2026-01-30 19:38:41,352 - ml_optimization.feature_engineer - INFO -   Rejected 0 features (high correlation)
+2026-01-30 19:38:41,352 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 19:38:41,363 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 19:38:41,363 - ml_optimization.feature_engineer - INFO - Selecting features using mutual_info method...
+2026-01-30 19:38:45,621 - ml_optimization.feature_engineer - INFO -   Selected 50 features
+2026-01-30 19:38:45,622 - ml_optimization.feature_engineer - INFO - Final feature count: 50
+2026-01-30 19:38:45,622 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:47:52,586 - ml_optimization.config_loader - INFO - Logging configured: level=INFO, file=logs/ml_optimization.log
+2026-01-30 19:47:52,586 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:47:52,586 - ml_optimization.ml_optimizer - INFO - ML OPTIMIZER INITIALIZED
+2026-01-30 19:47:52,586 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:47:52,586 - ml_optimization.time_series_cv - INFO - TimeSeriesCV initialized: n_splits=5, strategy=expanding
+2026-01-30 19:47:52,586 - ml_optimization.validation_framework - INFO - ValidationFramework initialized: threshold=0.85, min_lag=1
+2026-01-30 19:47:52,586 - ml_optimization.feature_engineer - INFO - AdvancedFeatureEngineer initialized: degree=2, depth=2, threshold=0.85
+2026-01-30 19:47:52,586 - ml_optimization.hyperparameter_optimizer - INFO - HyperparameterOptimizer initialized: n_iter=30
+2026-01-30 19:47:52,586 - ml_optimization.ensemble_builder - INFO - EnsembleBuilder initialized
+2026-01-30 19:47:52,586 - ml_optimization.model_interpreter - INFO - ModelInterpreter initialized
+2026-01-30 19:47:52,586 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:47:52,586 - ml_optimization.ml_optimizer - INFO - STARTING FULL ML OPTIMIZATION PIPELINE
+2026-01-30 19:47:52,586 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:47:52,586 - ml_optimization.ml_optimizer - INFO - Loading data from submission/results/Clean_Enhanced_Dataset.csv...
+2026-01-30 19:47:52,601 - ml_optimization.ml_optimizer - INFO -   Loaded 2777 records, 37 features
+2026-01-30 19:47:52,601 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:47:52,601 - ml_optimization.ml_optimizer - INFO - OPTIMIZING FOR JUDGE
+2026-01-30 19:47:52,601 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:47:52,603 - ml_optimization.ml_optimizer - INFO - Train: 2594 records, Test: 183 records
+2026-01-30 19:47:52,603 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:47:52,603 - ml_optimization.feature_engineer - INFO - ADVANCED FEATURE ENGINEERING
+2026-01-30 19:47:52,603 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:47:52,603 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 19:47:52,612 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 19:47:52,613 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 19:47:52,717 - ml_optimization.feature_engineer - INFO -   Created 561 interaction features
+2026-01-30 19:47:52,717 - ml_optimization.feature_engineer - INFO -   Rejected 0 features (high correlation)
+2026-01-30 19:47:52,717 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 19:47:52,746 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 19:47:52,746 - ml_optimization.feature_engineer - INFO - Selecting features using mutual_info method...
+2026-01-30 19:47:57,088 - ml_optimization.feature_engineer - INFO -   Selected 50 features
+2026-01-30 19:47:57,089 - ml_optimization.feature_engineer - INFO - Final feature count: 50
+2026-01-30 19:47:57,089 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:52:21,283 - ml_optimization.config_loader - INFO - Logging configured: level=INFO, file=logs/ml_optimization.log
+2026-01-30 19:52:21,284 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:52:21,284 - ml_optimization.ml_optimizer - INFO - ML OPTIMIZER INITIALIZED
+2026-01-30 19:52:21,284 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:52:21,284 - ml_optimization.time_series_cv - INFO - TimeSeriesCV initialized: n_splits=5, strategy=expanding
+2026-01-30 19:52:21,285 - ml_optimization.validation_framework - INFO - ValidationFramework initialized: threshold=0.85, min_lag=1
+2026-01-30 19:52:21,285 - ml_optimization.feature_engineer - INFO - AdvancedFeatureEngineer initialized: degree=2, depth=2, threshold=0.85
+2026-01-30 19:52:21,285 - ml_optimization.hyperparameter_optimizer - INFO - HyperparameterOptimizer initialized: n_iter=30
+2026-01-30 19:52:21,285 - ml_optimization.ensemble_builder - INFO - EnsembleBuilder initialized
+2026-01-30 19:52:21,285 - ml_optimization.model_interpreter - INFO - ModelInterpreter initialized
+2026-01-30 19:52:21,285 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:52:21,285 - ml_optimization.ml_optimizer - INFO - STARTING FULL ML OPTIMIZATION PIPELINE
+2026-01-30 19:52:21,285 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:52:21,285 - ml_optimization.ml_optimizer - INFO - Loading data from submission/results/Clean_Enhanced_Dataset.csv...
+2026-01-30 19:52:21,304 - ml_optimization.ml_optimizer - INFO -   Loaded 2777 records, 37 features
+2026-01-30 19:52:21,304 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:52:21,304 - ml_optimization.ml_optimizer - INFO - OPTIMIZING FOR JUDGE
+2026-01-30 19:52:21,304 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:52:21,305 - ml_optimization.ml_optimizer - INFO - Train: 2594 records, Test: 183 records
+2026-01-30 19:52:21,305 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:52:21,305 - ml_optimization.feature_engineer - INFO - ADVANCED FEATURE ENGINEERING
+2026-01-30 19:52:21,305 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:52:21,305 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 19:52:21,313 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 19:52:21,313 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 19:52:21,420 - ml_optimization.feature_engineer - INFO -   Created 561 interaction features
+2026-01-30 19:52:21,420 - ml_optimization.feature_engineer - INFO -   Rejected 0 features (high correlation)
+2026-01-30 19:52:21,420 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 19:52:21,450 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 19:52:21,450 - ml_optimization.feature_engineer - INFO - Selecting features using mutual_info method...
+2026-01-30 19:52:25,780 - ml_optimization.feature_engineer - INFO -   Selected 50 features
+2026-01-30 19:52:25,782 - ml_optimization.feature_engineer - INFO - Final feature count: 50
+2026-01-30 19:52:25,782 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:52:25,783 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 19:52:25,786 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 19:52:25,786 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 19:52:25,884 - ml_optimization.feature_engineer - INFO -   Created 553 interaction features
+2026-01-30 19:52:25,885 - ml_optimization.feature_engineer - INFO -   Rejected 8 features (high correlation)
+2026-01-30 19:52:25,885 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 19:52:25,888 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 19:52:25,888 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 19:52:25,888 - ml_optimization.validation_framework - INFO - VALIDATION FRAMEWORK - COMPREHENSIVE CHECK
+2026-01-30 19:52:25,888 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 19:52:25,888 - ml_optimization.validation_framework - INFO - Generating validation report...
+2026-01-30 19:52:25,892 - ml_optimization.validation_framework - INFO - All features have correlation < 0.85
+2026-01-30 19:52:25,893 - ml_optimization.validation_framework - INFO - Validation report: 50/50 features passed, 0 failed
+2026-01-30 19:52:25,893 - ml_optimization.validation_framework - INFO - ✓ VALIDATION PASSED: No data leakage detected
+2026-01-30 19:52:25,893 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 19:52:25,893 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 19:52:25,893 - ml_optimization.hyperparameter_optimizer - INFO - HYPERPARAMETER OPTIMIZATION
+2026-01-30 19:52:25,893 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 19:52:25,893 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing random_forest...
+2026-01-30 19:52:25,908 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize random_forest: X must contain 'Season' column for time-series splitting
+2026-01-30 19:52:25,908 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing gradient_boosting...
+2026-01-30 19:52:25,913 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize gradient_boosting: X must contain 'Season' column for time-series splitting
+2026-01-30 19:52:25,913 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing ridge...
+2026-01-30 19:52:25,915 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize ridge: X must contain 'Season' column for time-series splitting
+2026-01-30 19:52:25,915 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing lasso...
+2026-01-30 19:52:25,916 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize lasso: X must contain 'Season' column for time-series splitting
+2026-01-30 19:52:25,916 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing elasticnet...
+2026-01-30 19:52:25,918 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize elasticnet: X must contain 'Season' column for time-series splitting
+2026-01-30 19:52:25,918 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 19:52:25,919 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 19:52:25,919 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 19:52:25,923 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 19:52:25,923 - ml_optimization.ensemble_builder - INFO - ENSEMBLE BUILDING
+2026-01-30 19:52:25,923 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 19:52:25,923 - ml_optimization.ensemble_builder - INFO - Building stacking ensemble...
+2026-01-30 19:52:25,923 - ml_optimization.ensemble_builder - ERROR - Failed to build stacking ensemble: Invalid 'estimators' attribute, 'estimators' should be a non-empty list of (string, estimator) tuples.
+2026-01-30 19:52:25,923 - ml_optimization.ensemble_builder - INFO - Building voting ensemble...
+2026-01-30 19:52:25,924 - ml_optimization.ensemble_builder - ERROR - Failed to build voting ensemble: Invalid 'estimators' attribute, 'estimators' should be a non-empty list of (string, estimator) tuples.
+2026-01-30 19:52:25,924 - ml_optimization.ensemble_builder - INFO - Building weighted ensemble...
+2026-01-30 19:52:25,924 - ml_optimization.ensemble_builder - INFO -   Weights: {}
+2026-01-30 19:52:25,924 - ml_optimization.ensemble_builder - INFO - Building voting ensemble...
+2026-01-30 19:52:25,924 - ml_optimization.ensemble_builder - ERROR - Failed to build weighted ensemble: Invalid 'estimators' attribute, 'estimators' should be a non-empty list of (string, estimator) tuples.
+2026-01-30 19:52:25,924 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 19:52:25,924 - ml_optimization.ml_optimizer - INFO - Best model: None (R² = -inf)
+2026-01-30 19:52:25,924 - ml_optimization.model_interpreter - INFO - Generating interpretation report...
+2026-01-30 19:52:25,924 - ml_optimization.model_interpreter - INFO - Extracting feature importance...
+2026-01-30 19:52:25,924 - ml_optimization.model_interpreter - WARNING - Model does not have feature_importances_ or coef_
+2026-01-30 19:57:11,957 - ml_optimization.config_loader - INFO - Logging configured: level=INFO, file=logs/ml_optimization.log
+2026-01-30 19:57:11,957 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:57:11,957 - ml_optimization.ml_optimizer - INFO - ML OPTIMIZER INITIALIZED
+2026-01-30 19:57:11,957 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:57:11,957 - ml_optimization.time_series_cv - INFO - TimeSeriesCV initialized: n_splits=5, strategy=expanding
+2026-01-30 19:57:11,957 - ml_optimization.validation_framework - INFO - ValidationFramework initialized: threshold=0.85, min_lag=1
+2026-01-30 19:57:11,957 - ml_optimization.feature_engineer - INFO - AdvancedFeatureEngineer initialized: degree=2, depth=2, threshold=0.85
+2026-01-30 19:57:11,957 - ml_optimization.hyperparameter_optimizer - INFO - HyperparameterOptimizer initialized: n_iter=30
+2026-01-30 19:57:11,957 - ml_optimization.ensemble_builder - INFO - EnsembleBuilder initialized
+2026-01-30 19:57:11,957 - ml_optimization.model_interpreter - INFO - ModelInterpreter initialized
+2026-01-30 19:57:11,957 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:57:11,957 - ml_optimization.ml_optimizer - INFO - STARTING FULL ML OPTIMIZATION PIPELINE
+2026-01-30 19:57:11,957 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:57:11,957 - ml_optimization.ml_optimizer - INFO - Loading data from submission/results/Clean_Enhanced_Dataset.csv...
+2026-01-30 19:57:11,975 - ml_optimization.ml_optimizer - INFO -   Loaded 2777 records, 37 features
+2026-01-30 19:57:11,975 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:57:11,975 - ml_optimization.ml_optimizer - INFO - OPTIMIZING FOR JUDGE
+2026-01-30 19:57:11,975 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 19:57:11,977 - ml_optimization.ml_optimizer - INFO - Train: 2594 records, Test: 183 records
+2026-01-30 19:57:11,977 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:57:11,977 - ml_optimization.feature_engineer - INFO - ADVANCED FEATURE ENGINEERING
+2026-01-30 19:57:11,977 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:57:11,977 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 19:57:11,985 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 19:57:11,985 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 19:57:12,083 - ml_optimization.feature_engineer - INFO -   Created 561 interaction features
+2026-01-30 19:57:12,083 - ml_optimization.feature_engineer - INFO -   Rejected 0 features (high correlation)
+2026-01-30 19:57:12,083 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 19:57:12,097 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 19:57:12,098 - ml_optimization.feature_engineer - INFO - Selecting features using mutual_info method...
+2026-01-30 19:57:16,338 - ml_optimization.feature_engineer - INFO -   Selected 50 features
+2026-01-30 19:57:16,339 - ml_optimization.feature_engineer - INFO - Final feature count: 50
+2026-01-30 19:57:16,339 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 19:57:16,341 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 19:57:16,343 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 19:57:16,343 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 19:57:16,431 - ml_optimization.feature_engineer - INFO -   Created 553 interaction features
+2026-01-30 19:57:16,431 - ml_optimization.feature_engineer - INFO -   Rejected 8 features (high correlation)
+2026-01-30 19:57:16,431 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 19:57:16,434 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 19:57:16,434 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 19:57:16,434 - ml_optimization.validation_framework - INFO - VALIDATION FRAMEWORK - COMPREHENSIVE CHECK
+2026-01-30 19:57:16,434 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 19:57:16,434 - ml_optimization.validation_framework - INFO - Generating validation report...
+2026-01-30 19:57:16,437 - ml_optimization.validation_framework - INFO - All features have correlation < 0.85
+2026-01-30 19:57:16,437 - ml_optimization.validation_framework - INFO - Validation report: 50/50 features passed, 0 failed
+2026-01-30 19:57:16,437 - ml_optimization.validation_framework - INFO - ✓ VALIDATION PASSED: No data leakage detected
+2026-01-30 19:57:16,437 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 19:57:16,438 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 19:57:16,438 - ml_optimization.hyperparameter_optimizer - INFO - HYPERPARAMETER OPTIMIZATION
+2026-01-30 19:57:16,438 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 19:57:16,438 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing random_forest...
+2026-01-30 19:57:16,448 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize random_forest: X must contain 'Season' column for time-series splitting
+2026-01-30 19:57:16,448 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing gradient_boosting...
+2026-01-30 19:57:16,453 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize gradient_boosting: X must contain 'Season' column for time-series splitting
+2026-01-30 19:57:16,453 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing ridge...
+2026-01-30 19:57:16,454 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize ridge: X must contain 'Season' column for time-series splitting
+2026-01-30 19:57:16,454 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing lasso...
+2026-01-30 19:57:16,456 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize lasso: X must contain 'Season' column for time-series splitting
+2026-01-30 19:57:16,456 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing elasticnet...
+2026-01-30 19:57:16,459 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize elasticnet: X must contain 'Season' column for time-series splitting
+2026-01-30 19:57:16,459 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 19:57:16,459 - ml_optimization.ml_optimizer - ERROR - No models were successfully optimized!
+2026-01-30 20:04:04,018 - ml_optimization.config_loader - INFO - Logging configured: level=INFO, file=logs/ml_optimization.log
+2026-01-30 20:04:04,018 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:04:04,018 - ml_optimization.ml_optimizer - INFO - ML OPTIMIZER INITIALIZED
+2026-01-30 20:04:04,018 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:04:04,018 - ml_optimization.time_series_cv - INFO - TimeSeriesCV initialized: n_splits=5, strategy=expanding
+2026-01-30 20:04:04,018 - ml_optimization.validation_framework - INFO - ValidationFramework initialized: threshold=0.85, min_lag=1
+2026-01-30 20:04:04,018 - ml_optimization.feature_engineer - INFO - AdvancedFeatureEngineer initialized: degree=2, depth=2, threshold=0.85
+2026-01-30 20:04:04,018 - ml_optimization.hyperparameter_optimizer - INFO - HyperparameterOptimizer initialized: n_iter=30
+2026-01-30 20:04:04,018 - ml_optimization.ensemble_builder - INFO - EnsembleBuilder initialized
+2026-01-30 20:04:04,018 - ml_optimization.model_interpreter - INFO - ModelInterpreter initialized
+2026-01-30 20:04:04,019 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:04:04,019 - ml_optimization.ml_optimizer - INFO - STARTING FULL ML OPTIMIZATION PIPELINE
+2026-01-30 20:04:04,019 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:04:04,019 - ml_optimization.ml_optimizer - INFO - Loading data from submission/results/Clean_Enhanced_Dataset.csv...
+2026-01-30 20:04:04,036 - ml_optimization.ml_optimizer - INFO -   Loaded 2777 records, 37 features
+2026-01-30 20:04:04,036 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:04:04,036 - ml_optimization.ml_optimizer - INFO - OPTIMIZING FOR JUDGE
+2026-01-30 20:04:04,036 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:04:04,038 - ml_optimization.ml_optimizer - INFO - Train: 2594 records, Test: 183 records
+2026-01-30 20:04:04,038 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:04:04,038 - ml_optimization.feature_engineer - INFO - ADVANCED FEATURE ENGINEERING
+2026-01-30 20:04:04,038 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:04:04,038 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 20:04:04,048 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 20:04:04,048 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 20:04:04,157 - ml_optimization.feature_engineer - INFO -   Created 561 interaction features
+2026-01-30 20:04:04,157 - ml_optimization.feature_engineer - INFO -   Rejected 0 features (high correlation)
+2026-01-30 20:04:04,157 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 20:04:04,170 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 20:04:04,170 - ml_optimization.feature_engineer - INFO - Selecting features using mutual_info method...
+2026-01-30 20:04:08,501 - ml_optimization.feature_engineer - INFO -   Selected 50 features
+2026-01-30 20:04:08,502 - ml_optimization.feature_engineer - INFO - Final feature count: 50
+2026-01-30 20:04:08,503 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:04:08,504 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 20:04:08,506 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 20:04:08,507 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 20:04:08,666 - ml_optimization.feature_engineer - INFO -   Created 553 interaction features
+2026-01-30 20:04:08,666 - ml_optimization.feature_engineer - INFO -   Rejected 8 features (high correlation)
+2026-01-30 20:04:08,666 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 20:04:08,669 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 20:04:08,669 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:04:08,669 - ml_optimization.validation_framework - INFO - VALIDATION FRAMEWORK - COMPREHENSIVE CHECK
+2026-01-30 20:04:08,670 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:04:08,670 - ml_optimization.validation_framework - INFO - Generating validation report...
+2026-01-30 20:04:08,672 - ml_optimization.validation_framework - INFO - All features have correlation < 0.85
+2026-01-30 20:04:08,673 - ml_optimization.validation_framework - INFO - Validation report: 50/50 features passed, 0 failed
+2026-01-30 20:04:08,673 - ml_optimization.validation_framework - INFO - ✓ VALIDATION PASSED: No data leakage detected
+2026-01-30 20:04:08,673 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:04:08,673 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - HYPERPARAMETER OPTIMIZATION
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing random_forest...
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize random_forest: All dimensions must have names, but found: [Integer(low=100, high=500, prior='uniform', transform='identity'), Integer(low=5, high=30, prior='uniform', transform='identity'), Integer(low=2, high=20, prior='uniform', transform='identity'), Integer(low=1, high=10, prior='uniform', transform='identity')]
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing gradient_boosting...
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize gradient_boosting: All dimensions must have names, but found: [Integer(low=100, high=500, prior='uniform', transform='identity'), Real(low=0.01, high=0.3, prior='log-uniform', transform='identity'), Integer(low=3, high=10, prior='uniform', transform='identity'), Real(low=0.6, high=1.0, prior='uniform', transform='identity')]
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing ridge...
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize ridge: All dimensions must have names, but found: [Real(low=0.01, high=100.0, prior='log-uniform', transform='identity')]
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing lasso...
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize lasso: All dimensions must have names, but found: [Real(low=0.001, high=10.0, prior='log-uniform', transform='identity')]
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing elasticnet...
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - ERROR - Failed to optimize elasticnet: All dimensions must have names, but found: [Real(low=0.001, high=10.0, prior='log-uniform', transform='identity'), Real(low=0.0, high=1.0, prior='uniform', transform='identity')]
+2026-01-30 20:04:08,674 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:04:08,674 - ml_optimization.ml_optimizer - ERROR - No models were successfully optimized!
+2026-01-30 20:05:46,650 - ml_optimization.config_loader - INFO - Logging configured: level=INFO, file=logs/ml_optimization.log
+2026-01-30 20:05:46,650 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:05:46,650 - ml_optimization.ml_optimizer - INFO - ML OPTIMIZER INITIALIZED
+2026-01-30 20:05:46,650 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:05:46,650 - ml_optimization.time_series_cv - INFO - TimeSeriesCV initialized: n_splits=5, strategy=expanding
+2026-01-30 20:05:46,650 - ml_optimization.validation_framework - INFO - ValidationFramework initialized: threshold=0.85, min_lag=1
+2026-01-30 20:05:46,650 - ml_optimization.feature_engineer - INFO - AdvancedFeatureEngineer initialized: degree=2, depth=2, threshold=0.85
+2026-01-30 20:05:46,650 - ml_optimization.hyperparameter_optimizer - INFO - HyperparameterOptimizer initialized: n_iter=30
+2026-01-30 20:05:46,650 - ml_optimization.ensemble_builder - INFO - EnsembleBuilder initialized
+2026-01-30 20:05:46,650 - ml_optimization.model_interpreter - INFO - ModelInterpreter initialized
+2026-01-30 20:05:46,650 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:05:46,650 - ml_optimization.ml_optimizer - INFO - STARTING FULL ML OPTIMIZATION PIPELINE
+2026-01-30 20:05:46,650 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:05:46,650 - ml_optimization.ml_optimizer - INFO - Loading data from submission/results/Clean_Enhanced_Dataset.csv...
+2026-01-30 20:05:46,665 - ml_optimization.ml_optimizer - INFO -   Loaded 2777 records, 37 features
+2026-01-30 20:05:46,665 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:05:46,665 - ml_optimization.ml_optimizer - INFO - OPTIMIZING FOR JUDGE
+2026-01-30 20:05:46,665 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:05:46,666 - ml_optimization.ml_optimizer - INFO - Train: 2594 records, Test: 183 records
+2026-01-30 20:05:46,667 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:05:46,667 - ml_optimization.feature_engineer - INFO - ADVANCED FEATURE ENGINEERING
+2026-01-30 20:05:46,667 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:05:46,667 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 20:05:46,674 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 20:05:46,674 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 20:05:46,778 - ml_optimization.feature_engineer - INFO -   Created 561 interaction features
+2026-01-30 20:05:46,778 - ml_optimization.feature_engineer - INFO -   Rejected 0 features (high correlation)
+2026-01-30 20:05:46,778 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 20:05:46,797 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 20:05:46,797 - ml_optimization.feature_engineer - INFO - Selecting features using mutual_info method...
+2026-01-30 20:05:51,137 - ml_optimization.feature_engineer - INFO -   Selected 50 features
+2026-01-30 20:05:51,138 - ml_optimization.feature_engineer - INFO - Final feature count: 50
+2026-01-30 20:05:51,139 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:05:51,140 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 20:05:51,142 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 20:05:51,142 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 20:05:51,261 - ml_optimization.feature_engineer - INFO -   Created 553 interaction features
+2026-01-30 20:05:51,261 - ml_optimization.feature_engineer - INFO -   Rejected 8 features (high correlation)
+2026-01-30 20:05:51,261 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 20:05:51,264 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 20:05:51,264 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:05:51,264 - ml_optimization.validation_framework - INFO - VALIDATION FRAMEWORK - COMPREHENSIVE CHECK
+2026-01-30 20:05:51,264 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:05:51,264 - ml_optimization.validation_framework - INFO - Generating validation report...
+2026-01-30 20:05:51,267 - ml_optimization.validation_framework - INFO - All features have correlation < 0.85
+2026-01-30 20:05:51,268 - ml_optimization.validation_framework - INFO - Validation report: 50/50 features passed, 0 failed
+2026-01-30 20:05:51,268 - ml_optimization.validation_framework - INFO - ✓ VALIDATION PASSED: No data leakage detected
+2026-01-30 20:05:51,268 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:05:51,268 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:05:51,268 - ml_optimization.hyperparameter_optimizer - INFO - HYPERPARAMETER OPTIMIZATION
+2026-01-30 20:05:51,268 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:05:51,268 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing random_forest...
+2026-01-30 20:05:51,273 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:05:51,273 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:05:53,589 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:05:53,589 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:05:55,021 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:05:55,021 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:05:55,906 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:05:55,906 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:05:57,922 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:05:57,922 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:05:59,437 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:05:59,437 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:00,671 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:00,671 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:01,422 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:01,423 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:03,036 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:03,036 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:03,710 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:03,710 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:04,433 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:04,433 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:07,442 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:07,442 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:08,868 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:08,868 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:11,097 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:11,097 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:11,679 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:11,679 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:13,475 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:13,475 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:15,882 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:15,882 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:17,955 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:17,955 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:18,773 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:18,773 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:19,893 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:19,893 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:21,327 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:21,327 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:22,326 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:22,326 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:25,816 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:25,816 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:28,050 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:28,050 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:29,273 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:29,274 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:30,199 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:30,199 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:30,977 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:30,978 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:33,519 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:33,519 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:36,066 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:36,066 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:36,664 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:36,664 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:39,836 - ml_optimization.hyperparameter_optimizer - INFO -   Best random_forest R²: 0.6017
+2026-01-30 20:06:39,836 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'n_estimators': np.int64(300), 'max_depth': np.int64(5), 'min_samples_split': np.int64(20), 'min_samples_leaf': np.int64(1)}
+2026-01-30 20:06:39,837 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing gradient_boosting...
+2026-01-30 20:06:39,841 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:39,841 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:06:59,357 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:06:59,358 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:07:08,099 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:07:08,099 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:07:11,540 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:07:11,540 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:07:36,752 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:07:36,753 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:07:43,464 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:07:43,464 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:07:54,414 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:07:54,414 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:00,483 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:00,483 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:13,428 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:13,428 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:17,508 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:17,508 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:20,909 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:20,909 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:22,402 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:22,402 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:31,911 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:31,911 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:34,081 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:34,081 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:40,096 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:40,096 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:47,811 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:47,811 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:53,581 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:53,581 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:57,140 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:57,140 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:08:59,029 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:08:59,029 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:09:10,460 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:09:10,460 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:09:13,768 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:09:13,768 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:09:17,552 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:09:17,552 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:09:27,002 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:09:27,002 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:09:30,892 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:09:30,892 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:09:43,081 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:09:43,082 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:04,165 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:04,165 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:14,362 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:14,362 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:15,955 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:15,955 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:17,550 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:17,551 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:25,275 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:25,275 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,118 - ml_optimization.hyperparameter_optimizer - INFO -   Best gradient_boosting R²: 0.6004
+2026-01-30 20:10:29,118 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'n_estimators': np.int64(100), 'learning_rate': 0.03877608826315206, 'max_depth': np.int64(3), 'subsample': 0.7421604177237264}
+2026-01-30 20:10:29,118 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing ridge...
+2026-01-30 20:10:29,119 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,119 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,136 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,136 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,145 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,145 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,155 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,155 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,165 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,165 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,174 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,174 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,184 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,184 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,193 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,193 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,209 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,209 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,231 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,231 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,275 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,275 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,316 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,316 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,359 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,359 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,403 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,403 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,449 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,449 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,498 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,498 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,562 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,562 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,614 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,614 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,665 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,665 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,724 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,725 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,785 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,785 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,844 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,844 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,913 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,913 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:29,980 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:29,980 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,047 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,047 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,124 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,124 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,212 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,212 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,290 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,290 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,370 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,370 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,450 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,451 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,538 - ml_optimization.hyperparameter_optimizer - INFO -   Best ridge R²: 0.5952
+2026-01-30 20:10:30,538 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'alpha': 1.7108279567123006}
+2026-01-30 20:10:30,538 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing lasso...
+2026-01-30 20:10:30,539 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,539 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,682 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,683 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:30,899 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:30,899 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:31,049 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:31,049 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:31,227 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:31,228 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:31,400 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:31,400 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:31,612 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:31,612 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:31,808 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:31,808 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:32,002 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:32,002 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:32,213 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:32,214 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:32,413 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:32,413 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:32,642 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:32,642 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:32,756 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:32,756 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:32,985 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:32,985 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:33,211 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:33,211 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:33,477 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:33,477 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:33,637 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:33,637 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:33,877 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:33,877 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:34,140 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:34,140 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:34,328 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:34,328 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:34,563 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:34,563 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:34,814 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:34,814 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:35,082 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:35,082 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:35,378 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:35,378 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:35,600 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:35,600 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:35,864 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:35,864 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:36,147 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:36,147 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:36,413 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:36,413 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:36,708 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:36,708 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:36,987 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:36,987 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:37,321 - ml_optimization.hyperparameter_optimizer - INFO -   Best lasso R²: 0.5961
+2026-01-30 20:10:37,321 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'alpha': 0.0016673680940088227}
+2026-01-30 20:10:37,321 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing elasticnet...
+2026-01-30 20:10:37,323 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:37,323 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:37,493 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:37,493 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:37,646 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:37,646 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:37,870 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:37,870 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:38,074 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:38,074 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:38,305 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:38,305 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:38,549 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:38,549 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:38,786 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:38,786 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:38,902 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:38,902 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:39,120 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:39,120 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:39,377 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:39,378 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:39,660 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:39,660 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:39,946 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:39,946 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:40,218 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:40,218 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:40,500 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:40,500 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:40,791 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:40,791 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:41,012 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:41,012 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:41,294 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:41,294 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:41,573 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:41,573 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:41,820 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:41,820 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:41,996 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:41,996 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:42,300 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:42,300 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:42,585 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:42,585 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:42,875 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:42,875 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:43,170 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:43,170 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:43,447 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:43,447 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:43,734 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:43,734 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:43,884 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:43,885 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:44,168 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:44,168 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:44,436 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:44,436 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:44,787 - ml_optimization.hyperparameter_optimizer - INFO -   Best elasticnet R²: 0.5961
+2026-01-30 20:10:44,787 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'alpha': 0.0017818038335665626, 'l1_ratio': 1.0}
+2026-01-30 20:10:44,787 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:10:44,787 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:44,787 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:44,790 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 20:10:44,790 - ml_optimization.ensemble_builder - INFO - ENSEMBLE BUILDING
+2026-01-30 20:10:44,790 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 20:10:44,790 - ml_optimization.ensemble_builder - INFO - Building stacking ensemble...
+2026-01-30 20:10:46,965 - ml_optimization.ensemble_builder - ERROR - Failed to build stacking ensemble: X must contain 'Season' column for time-series splitting
+2026-01-30 20:10:46,966 - ml_optimization.ensemble_builder - INFO - Building voting ensemble...
+2026-01-30 20:10:48,772 - ml_optimization.ensemble_builder - INFO -   Voting ensemble built
+2026-01-30 20:10:48,772 - ml_optimization.ensemble_builder - INFO - Building weighted ensemble...
+2026-01-30 20:10:49,806 - ml_optimization.ensemble_builder - INFO -   Weights: {'random_forest': np.float64(0.1971367760437715), 'gradient_boosting': np.float64(0.19569867030457114), 'ridge': np.float64(0.19996216614473503), 'lasso': np.float64(0.20360443484120141), 'elasticnet': np.float64(0.2035979526657209)}
+2026-01-30 20:10:49,806 - ml_optimization.ensemble_builder - INFO - Building voting ensemble...
+2026-01-30 20:10:50,994 - ml_optimization.ensemble_builder - INFO -   Voting ensemble built
+2026-01-30 20:10:50,995 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 20:10:51,025 - ml_optimization.ml_optimizer - INFO - random_forest Test R²: 0.7237
+2026-01-30 20:10:51,026 - ml_optimization.ml_optimizer - INFO - gradient_boosting Test R²: 0.7209
+2026-01-30 20:10:51,026 - ml_optimization.ml_optimizer - INFO - ridge Test R²: 0.7215
+2026-01-30 20:10:51,027 - ml_optimization.ml_optimizer - INFO - lasso Test R²: 0.7295
+2026-01-30 20:10:51,028 - ml_optimization.ml_optimizer - INFO - elasticnet Test R²: 0.7294
+2026-01-30 20:10:51,047 - ml_optimization.ml_optimizer - INFO - voting Test R²: 0.7327
+2026-01-30 20:10:51,064 - ml_optimization.ml_optimizer - INFO - weighted Test R²: 0.7327
+2026-01-30 20:10:51,064 - ml_optimization.ml_optimizer - INFO - Best model: weighted (R² = 0.7327)
+2026-01-30 20:10:51,064 - ml_optimization.model_interpreter - INFO - Generating interpretation report...
+2026-01-30 20:10:51,064 - ml_optimization.model_interpreter - INFO - Extracting feature importance...
+2026-01-30 20:10:51,064 - ml_optimization.model_interpreter - WARNING - Model does not have feature_importances_ or coef_
+2026-01-30 20:10:51,097 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:10:51,098 - ml_optimization.ml_optimizer - INFO - OPTIMIZING FOR FAN
+2026-01-30 20:10:51,098 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:10:51,098 - ml_optimization.ml_optimizer - INFO - Train: 2594 records, Test: 183 records
+2026-01-30 20:10:51,098 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:10:51,098 - ml_optimization.feature_engineer - INFO - ADVANCED FEATURE ENGINEERING
+2026-01-30 20:10:51,098 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:10:51,098 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 20:10:51,107 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 20:10:51,108 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 20:10:51,219 - ml_optimization.feature_engineer - INFO -   Created 561 interaction features
+2026-01-30 20:10:51,220 - ml_optimization.feature_engineer - INFO -   Rejected 0 features (high correlation)
+2026-01-30 20:10:51,220 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 20:10:51,233 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 20:10:51,233 - ml_optimization.feature_engineer - INFO - Selecting features using mutual_info method...
+2026-01-30 20:10:55,757 - ml_optimization.feature_engineer - INFO -   Selected 50 features
+2026-01-30 20:10:55,760 - ml_optimization.feature_engineer - INFO - Final feature count: 50
+2026-01-30 20:10:55,760 - ml_optimization.feature_engineer - INFO - ================================================================================
+2026-01-30 20:10:55,761 - ml_optimization.feature_engineer - INFO - Creating polynomial features (degree=2)...
+2026-01-30 20:10:55,764 - ml_optimization.feature_engineer - INFO -   Created 595 polynomial features
+2026-01-30 20:10:55,765 - ml_optimization.feature_engineer - INFO - Creating interaction features (depth=2)...
+2026-01-30 20:10:55,866 - ml_optimization.feature_engineer - INFO -   Created 560 interaction features
+2026-01-30 20:10:55,866 - ml_optimization.feature_engineer - INFO -   Rejected 1 features (high correlation)
+2026-01-30 20:10:55,866 - ml_optimization.feature_engineer - INFO - Creating domain-specific features...
+2026-01-30 20:10:55,869 - ml_optimization.feature_engineer - INFO -   Created 5 domain-specific features
+2026-01-30 20:10:55,869 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:10:55,869 - ml_optimization.validation_framework - INFO - VALIDATION FRAMEWORK - COMPREHENSIVE CHECK
+2026-01-30 20:10:55,869 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:10:55,869 - ml_optimization.validation_framework - INFO - Generating validation report...
+2026-01-30 20:10:55,872 - ml_optimization.validation_framework - INFO - All features have correlation < 0.85
+2026-01-30 20:10:55,872 - ml_optimization.validation_framework - INFO - Validation report: 50/50 features passed, 0 failed
+2026-01-30 20:10:55,872 - ml_optimization.validation_framework - INFO - ✓ VALIDATION PASSED: No data leakage detected
+2026-01-30 20:10:55,873 - ml_optimization.validation_framework - INFO - ================================================================================
+2026-01-30 20:10:55,873 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:10:55,873 - ml_optimization.hyperparameter_optimizer - INFO - HYPERPARAMETER OPTIMIZATION
+2026-01-30 20:10:55,873 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:10:55,873 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing random_forest...
+2026-01-30 20:10:55,878 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:55,878 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:10:58,581 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:10:58,581 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:00,233 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:00,233 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:01,398 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:01,398 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:03,676 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:03,676 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:05,373 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:05,373 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:06,745 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:06,745 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:07,668 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:07,668 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:09,713 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:09,713 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:10,580 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:10,580 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:11,438 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:11,438 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:12,395 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:12,395 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:13,842 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:13,842 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:15,783 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:15,783 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:16,422 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:16,422 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:19,536 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:19,536 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:22,966 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:22,966 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:26,954 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:26,954 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:29,464 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:29,464 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:32,609 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:32,610 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:33,474 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:33,474 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:34,417 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:34,417 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:37,845 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:37,846 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:38,673 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:38,673 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:39,541 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:39,541 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:42,095 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:42,096 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:44,587 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:44,587 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:47,082 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:47,082 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:51,025 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:51,026 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:53,546 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:53,546 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:11:58,183 - ml_optimization.hyperparameter_optimizer - INFO -   Best random_forest R²: 0.6465
+2026-01-30 20:11:58,183 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'n_estimators': np.int64(500), 'max_depth': np.int64(5), 'min_samples_split': np.int64(20), 'min_samples_leaf': np.int64(9)}
+2026-01-30 20:11:58,183 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing gradient_boosting...
+2026-01-30 20:11:58,187 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:11:58,187 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:12:21,181 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:12:21,182 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:12:31,454 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:12:31,454 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:12:35,336 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:12:35,337 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:13:05,804 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:13:05,805 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:13:13,410 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:13:13,410 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:13:26,924 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:13:26,924 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:13:33,930 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:13:33,930 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:13:49,018 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:13:49,018 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:13:53,715 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:13:53,715 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:13:57,747 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:13:57,747 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:01,528 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:01,528 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:09,836 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:09,837 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:12,073 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:12,073 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:18,857 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:18,857 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:21,094 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:21,094 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:32,315 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:32,315 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:38,062 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:38,062 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:46,405 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:46,405 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:14:53,491 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:14:53,492 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:15:01,785 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:15:01,785 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:15:06,443 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:15:06,444 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:15:09,236 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:15:09,236 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:15:17,551 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:15:17,551 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:15:39,164 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:15:39,165 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:03,561 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:03,562 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:10,388 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:10,388 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:22,879 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:22,880 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:27,248 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:27,249 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:31,982 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:31,982 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,893 - ml_optimization.hyperparameter_optimizer - INFO -   Best gradient_boosting R²: 0.6411
+2026-01-30 20:16:40,893 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'n_estimators': np.int64(500), 'learning_rate': 0.01, 'max_depth': np.int64(3), 'subsample': 0.6034943382589879}
+2026-01-30 20:16:40,893 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing ridge...
+2026-01-30 20:16:40,894 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,894 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,906 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,906 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,916 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,916 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,925 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,925 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,934 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,934 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,942 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,942 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,951 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,951 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,960 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,960 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,969 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,969 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:40,978 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:40,978 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,024 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,024 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,064 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,064 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,107 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,107 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,151 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,151 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,196 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,196 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,243 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,243 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,288 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,288 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,350 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,350 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,399 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,399 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,452 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,452 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,506 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,506 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,563 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,563 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,623 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,623 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,685 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,685 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,754 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,754 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,826 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,826 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,915 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,915 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:41,995 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:41,995 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,068 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,068 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,140 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,140 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,218 - ml_optimization.hyperparameter_optimizer - INFO -   Best ridge R²: 0.6357
+2026-01-30 20:16:42,218 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'alpha': 0.01}
+2026-01-30 20:16:42,218 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing lasso...
+2026-01-30 20:16:42,219 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,219 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,229 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,229 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,269 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,269 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,279 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,279 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,288 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,288 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,300 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,300 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,385 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,385 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,396 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,396 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,410 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,410 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,468 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,468 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,514 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,514 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,663 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,663 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,817 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,817 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,884 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,884 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:42,935 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:42,935 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,001 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,001 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,058 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,058 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,203 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,203 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,258 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,258 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,315 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,315 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,464 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,464 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,521 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,521 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,596 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,596 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,663 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,663 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,741 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,741 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,806 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,806 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,873 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,873 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:43,990 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:43,990 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,064 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,064 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,143 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,143 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,328 - ml_optimization.hyperparameter_optimizer - INFO -   Best lasso R²: 0.6088
+2026-01-30 20:16:44,328 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'alpha': 0.001}
+2026-01-30 20:16:44,328 - ml_optimization.hyperparameter_optimizer - INFO - Optimizing elasticnet...
+2026-01-30 20:16:44,331 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,331 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,380 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,380 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,418 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,418 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,519 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,520 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,534 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,534 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,636 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,636 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,752 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,752 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,821 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,821 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,829 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,829 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:44,932 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:44,932 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:45,109 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:45,109 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:45,389 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:45,389 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:45,553 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:45,553 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:45,649 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:45,649 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:45,872 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:45,872 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:46,146 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:46,146 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:46,341 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:46,341 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:46,549 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:46,549 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:46,749 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:46,750 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:47,049 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:47,049 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:47,196 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:47,196 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:47,391 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:47,391 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:47,633 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:47,633 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:47,709 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:47,709 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:47,908 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:47,908 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:47,990 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:47,990 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:48,223 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:48,223 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:48,428 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:48,428 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:48,665 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:48,665 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:48,995 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:48,995 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:49,265 - ml_optimization.hyperparameter_optimizer - INFO -   Best elasticnet R²: 0.6185
+2026-01-30 20:16:49,265 - ml_optimization.hyperparameter_optimizer - INFO -   Best params: {'alpha': 0.001, 'l1_ratio': 0.29699234483115877}
+2026-01-30 20:16:49,265 - ml_optimization.hyperparameter_optimizer - INFO - ================================================================================
+2026-01-30 20:16:49,266 - ml_optimization.time_series_cv - INFO - Splitting 32 seasons into 5 folds
+2026-01-30 20:16:49,266 - ml_optimization.time_series_cv - INFO - Validation size: 5 seasons per fold
+2026-01-30 20:16:49,268 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 20:16:49,268 - ml_optimization.ensemble_builder - INFO - ENSEMBLE BUILDING
+2026-01-30 20:16:49,268 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 20:16:49,268 - ml_optimization.ensemble_builder - INFO - Building stacking ensemble...
+2026-01-30 20:16:53,504 - ml_optimization.ensemble_builder - ERROR - Failed to build stacking ensemble: X must contain 'Season' column for time-series splitting
+2026-01-30 20:16:53,505 - ml_optimization.ensemble_builder - INFO - Building voting ensemble...
+2026-01-30 20:16:57,338 - ml_optimization.ensemble_builder - INFO -   Voting ensemble built
+2026-01-30 20:16:57,338 - ml_optimization.ensemble_builder - INFO - Building weighted ensemble...
+2026-01-30 20:17:00,726 - ml_optimization.ensemble_builder - INFO -   Weights: {'random_forest': np.float64(0.20447055350079732), 'gradient_boosting': np.float64(0.20153109696003332), 'ridge': np.float64(0.20372778110436637), 'lasso': np.float64(0.194087077477952), 'elasticnet': np.float64(0.19618349095685103)}
+2026-01-30 20:17:00,727 - ml_optimization.ensemble_builder - INFO - Building voting ensemble...
+2026-01-30 20:17:03,618 - ml_optimization.ensemble_builder - INFO -   Voting ensemble built
+2026-01-30 20:17:03,618 - ml_optimization.ensemble_builder - INFO - ================================================================================
+2026-01-30 20:17:03,649 - ml_optimization.ml_optimizer - INFO - random_forest Test R²: 0.5475
+2026-01-30 20:17:03,650 - ml_optimization.ml_optimizer - INFO - gradient_boosting Test R²: 0.5523
+2026-01-30 20:17:03,651 - ml_optimization.ml_optimizer - INFO - ridge Test R²: 0.5481
+2026-01-30 20:17:03,652 - ml_optimization.ml_optimizer - INFO - lasso Test R²: 0.5231
+2026-01-30 20:17:03,652 - ml_optimization.ml_optimizer - INFO - elasticnet Test R²: 0.5320
+2026-01-30 20:17:03,684 - ml_optimization.ml_optimizer - INFO - voting Test R²: 0.5638
+2026-01-30 20:17:03,717 - ml_optimization.ml_optimizer - INFO - weighted Test R²: 0.5640
+2026-01-30 20:17:03,717 - ml_optimization.ml_optimizer - INFO - Best model: weighted (R² = 0.5640)
+2026-01-30 20:17:03,717 - ml_optimization.model_interpreter - INFO - Generating interpretation report...
+2026-01-30 20:17:03,717 - ml_optimization.model_interpreter - INFO - Extracting feature importance...
+2026-01-30 20:17:03,717 - ml_optimization.model_interpreter - WARNING - Model does not have feature_importances_ or coef_
+2026-01-30 20:17:03,777 - ml_optimization.ml_optimizer - INFO - Models saved to models/
+2026-01-30 20:17:03,777 - ml_optimization.ml_optimizer - INFO - ================================================================================
+ML OPTIMIZATION SUMMARY REPORT
+================================================================================
+
+
+JUDGE PREDICTION:
+  Best Model: weighted
+  Test R²: 0.7327
+  Test MAE: 0.5925
+  Test RMSE: 0.7790
+  Features Used: 50
+
+FAN PREDICTION:
+  Best Model: weighted
+  Test R²: 0.5640
+  Test MAE: 0.0199
+  Test RMSE: 0.0337
+  Features Used: 50
+
+================================================================================
+2026-01-30 20:17:03,777 - ml_optimization.ml_optimizer - INFO - Summary report saved to reports/ml_optimization/optimization_summary.txt
+2026-01-30 20:17:03,777 - ml_optimization.ml_optimizer - INFO - ================================================================================
+2026-01-30 20:17:03,777 - ml_optimization.ml_optimizer - INFO - ML OPTIMIZATION COMPLETE
+2026-01-30 20:17:03,777 - ml_optimization.ml_optimizer - INFO - ================================================================================

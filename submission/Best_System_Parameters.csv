@@ -1,0 +1,6 @@
+Parameter,Value
+judge_weight,0.5
+fan_weight,0.5
+sigmoid_k,5.0
+sigmoid_x0,0.3
+score,0.631223880597015
