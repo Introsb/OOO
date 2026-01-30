@@ -1,0 +1,18 @@
+{
+  "absolute_share": {
+    "basic_r2": 0.029486849023665763,
+    "week_r2": 0.48367585470020663,
+    "improvement": 0.45418900567654086
+  },
+  "relative_strength": {
+    "basic_r2": 0.0014573970518376722,
+    "week_r2": 0.0014831112401919588,
+    "improvement": 2.5714188354286627e-05
+  },
+  "rank": {
+    "basic_r2": 0.001130047092363462,
+    "week_r2": 0.17961468389507856,
+    "improvement": 0.1784846368027151
+  },
+  "verdict": "Week captures both structural and preference dynamics"
+}

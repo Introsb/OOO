@@ -1,0 +1,11 @@
+{
+  "basic_r2_mean": -0.009292187777055361,
+  "basic_r2_std": 0.04549706112595965,
+  "enhanced_r2_mean": -0.0071012929741604445,
+  "enhanced_r2_std": 0.04118647516193692,
+  "improvement": 0.002190894802894917,
+  "improvement_pct": 23.57781456273152,
+  "num_basic_features": 56,
+  "num_enhanced_features": 63,
+  "num_new_features": 7
+}

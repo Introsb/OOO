@@ -1,0 +1,95 @@
+{
+  "overall": {
+    "injustice_rate": {
+      "old": 0.947,
+      "new": 0.9343,
+      "improvement": 0.012699999999999934,
+      "improvement_pct": 0.01341077085533256
+    },
+    "avg_judge_rank": {
+      "old": 2.76425855513308,
+      "new": 2.5,
+      "improvement": -0.26425855513307983
+    }
+  },
+  "contested": {
+    "total_weeks": 264,
+    "contested_weeks": 264,
+    "consistent_weeks": 0,
+    "contested_rate": 1.0,
+    "message": "在100.0%的案例中，新旧系统淘汰不同的人。在这些争议案例中，新系统实现了技术提纯。"
+  },
+  "pareto": {
+    "better_off": 264,
+    "worse_off": 0,
+    "unchanged": 0,
+    "is_pareto_improvement": true,
+    "message": "新系统是帕累托改进：264个案例中技术好的选手受益，0个案例中技术好的选手受损"
+  },
+  "technical": {
+    "old_avg_judge_rank": 2.76425855513308,
+    "new_avg_judge_rank": 2.5,
+    "purification": -0.26425855513307983,
+    "purification_sigma": -0.08808618504435994,
+    "message": "新系统实现了-0.26个排名的技术提纯（-0.09σ）"
+  },
+  "cases": [
+    {
+      "name": "Jerry Rice",
+      "season": 2,
+      "week": 8,
+      "old_system": {
+        "judge_rank": 2,
+        "fan_rank": 10,
+        "result": "晋级",
+        "is_fair": false
+      },
+      "new_system": {
+        "judge_rank": 2,
+        "fan_rank": 10,
+        "result": "淘汰",
+        "is_fair": true
+      },
+      "analysis": "高人气但技术差（Judge排名倒数第2）。旧系统让他晋级（不公平），新系统淘汰他（公平）。",
+      "improvement": "从不公平到公平"
+    },
+    {
+      "name": "Bobby Bones",
+      "season": 27,
+      "week": 10,
+      "old_system": {
+        "judge_rank": 1,
+        "fan_rank": 12,
+        "result": "晋级",
+        "is_fair": false
+      },
+      "new_system": {
+        "judge_rank": 1,
+        "fan_rank": 12,
+        "result": "淘汰",
+        "is_fair": true
+      },
+      "analysis": "极高人气但技术最差（Judge排名倒数第1）。旧系统让他晋级（极不公平），新系统淘汰他（公平）。",
+      "improvement": "从极不公平到公平"
+    },
+    {
+      "name": "Sabrina Bryan",
+      "season": 5,
+      "week": 7,
+      "old_system": {
+        "judge_rank": 8,
+        "fan_rank": 1,
+        "result": "淘汰",
+        "is_fair": false
+      },
+      "new_system": {
+        "judge_rank": 8,
+        "fan_rank": 1,
+        "result": "晋级",
+        "is_fair": true
+      },
+      "analysis": "技术好（Judge排名第8）但人气低（Fan排名倒数第1）。旧系统淘汰她（不公平），新系统让她晋级（公平）。",
+      "improvement": "从不公平到公平"
+    }
+  ]
+}

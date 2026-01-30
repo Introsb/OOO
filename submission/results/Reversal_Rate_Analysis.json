@@ -1,0 +1,78 @@
+{
+  "actual": {
+    "reversal_rate": 1.0,
+    "reversal_weeks": 264,
+    "total_weeks": 264
+  },
+  "theory": {
+    "actual_correlation": null,
+    "interpretation": "\u5b9e\u9645\u6570\u636e\u4e2dJudge\u548cFan\u7684\u76f8\u5173\u7cfb\u6570\u4e3anan\uff0c\u8fdc\u4f4e\u4e8e1.0\uff0c\u56e0\u6b64\u9006\u8f6c\u7387\u9ad8"
+  },
+  "counterexamples": {
+    "perfect_correlation": {
+      "reversal_rate": 0.0,
+      "message": "\u5b8c\u5168\u76f8\u5173\u6570\u636e\uff1a\u9006\u8f6c\u7387=0%\uff08\u4e24\u79cd\u89c4\u5219\u6dd8\u6c70\u540c\u4e00\u4eba\uff1aD\uff09"
+    },
+    "uniform_distribution": {
+      "reversal_rate": 0.0,
+      "message": "\u5747\u5300\u5206\u5e03\u6570\u636e\uff1a\u9006\u8f6c\u7387=0%\uff08\u6240\u6709\u4eba\u5206\u6570\u76f8\u540c\uff0c\u65e0\u5dee\u5f02\uff09"
+    },
+    "high_correlation": {
+      "reversal_rate": 0.0,
+      "message": "\u6392\u540d\u5b8c\u5168\u4e00\u81f4\u6570\u636e\uff1a\u9006\u8f6c\u7387=0%\uff08\u4e24\u79cd\u89c4\u5219\u6dd8\u6c70\u540c\u4e00\u4eba\uff1aE\uff09"
+    },
+    "two_contestants": {
+      "reversal_rate": 0.0,
+      "message": "\u53ea\u67092\u4e2a\u9009\u624b\uff1a\u9006\u8f6c\u7387=0%\uff08\u65e0\u8bba\u7528\u4ec0\u4e48\u89c4\u5219\u90fd\u6dd8\u6c70\u540c\u4e00\u4eba\uff09"
+    }
+  },
+  "sensitivity": {
+    "correlations": [
+      -0.5,
+      -0.4236842105263158,
+      -0.34736842105263155,
+      -0.2710526315789474,
+      -0.19473684210526315,
+      -0.11842105263157893,
+      -0.04210526315789476,
+      0.03421052631578947,
+      0.1105263157894737,
+      0.18684210526315792,
+      0.26315789473684215,
+      0.33947368421052637,
+      0.4157894736842105,
+      0.4921052631578947,
+      0.5684210526315789,
+      0.6447368421052633,
+      0.7210526315789474,
+      0.7973684210526315,
+      0.8736842105263158,
+      0.95
+    ],
+    "reversal_rates": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "threshold_correlation": null,
+    "threshold_rate": null,
+    "message": "\u5728\u6240\u6709\u6d4b\u8bd5\u7684\u76f8\u5173\u7cfb\u6570\u4e0b\uff0c\u9006\u8f6c\u7387\u90fd>50%"
+  }
+}

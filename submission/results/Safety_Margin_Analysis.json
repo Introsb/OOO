@@ -1,0 +1,18 @@
+{
+  "winners": {
+    "count": 34,
+    "avg_vote": 0.15402859731889787,
+    "avg_safety_line": 0.14854889373104616,
+    "avg_margin": 0.005479703587851738,
+    "avg_margin_pct": 0.03977025814280877,
+    "above_safety_rate": 0.6764705882352942
+  },
+  "early_eliminated": {
+    "count": 61,
+    "avg_vote": 0.05122091361678779,
+    "avg_safety_line": 0.08335357720603621,
+    "avg_margin": -0.032132663589248434,
+    "avg_margin_pct": -0.3847259463206986,
+    "below_safety_rate": 0.7540983606557377
+  }
+}

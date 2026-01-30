@@ -1,0 +1,58 @@
+{
+  "results": {
+    "normalization": {
+      "max_deviation": 5.329070518200751e-15,
+      "pass_rate": 1.0,
+      "total_weeks": 335,
+      "passed_weeks": 335,
+      "status": "PASS"
+    },
+    "elimination_consistency": {
+      "consistency_rate": 0.49640287769784175,
+      "correlation": -0.475227358108271,
+      "bottom_quartile_overlap": 345,
+      "total_bottom_quartile": 695,
+      "status": "PASS"
+    },
+    "temporal_smoothness": {
+      "avg_smoothness": 0.02700637512989896,
+      "num_contestants": 288,
+      "status": "PASS"
+    },
+    "cross_season_stability": {
+      "avg_similarity": 0.7496382405473314,
+      "num_comparisons": 33,
+      "status": "PASS"
+    },
+    "judge_correlation": {
+      "pearson_correlation": 0.4444328156785083,
+      "spearman_correlation": 0.505534291239642,
+      "sample_size": 2777,
+      "status": "PASS"
+    },
+    "winner_consistency": {
+      "top_half_rate": 0.9705882352941176,
+      "avg_percentile": 0.7668510411157471,
+      "num_winners": 34,
+      "status": "PASS",
+      "interpretation": "97.1% of winners are in top 50% of fan votes"
+    },
+    "early_elimination": {
+      "bottom_half_rate": 0.8032786885245902,
+      "avg_percentile": 0.18198181599820945,
+      "num_early_eliminated": 61,
+      "status": "PASS",
+      "interpretation": "80.3% of early eliminated are in bottom 50% of fan votes"
+    },
+    "vote_distribution": {
+      "avg_entropy": 1.9709778649271361,
+      "avg_gini": 0.12227768235374718,
+      "num_weeks": 335,
+      "status": "PASS",
+      "interpretation": "Entropy=1.97 (ideal: 1.5-2.5), Gini=0.12 (ideal: 0.1-0.4)"
+    }
+  },
+  "overall_pass_rate": 1.0,
+  "total_tests": 8,
+  "passed_tests": 8
+}
